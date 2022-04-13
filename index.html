@@ -29,7 +29,6 @@ p {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
   color:white;
 }
 .logo {
@@ -41,7 +40,8 @@ p {
 }
 
 .inner-header {
-  height:65vh;
+  background: linear-gradient(0deg, rgba(252, 157, 3,1) 0%, rgba(252, 65, 3,1) 100%);
+  height:40vh;
   width:100%;
   margin: 0;
   padding: 0;
@@ -110,30 +110,39 @@ p {
     font-size:24px;
   }
 }
+#content {
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(20, 46, 233);
+}
+#y {
+    background-color: rgba(252, 157, 3,1);
+}
 </style>
 <div class="header">
 
         <div class="inner-header flex">
         </div>
         
-        <div>
+        <div id="y">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
         <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(20, 46, 233, 0.6)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(20, 46, 233, 0.7)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(20, 46, 233, 0.8)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(20, 46, 233, 0.9)" />
         </g>
         </svg>
         </div>
-        
+        <div id="content">
+            <div class="bottomMenu">PICIKUKI</div>
+        </div>
         </div>
         
-        <div class="content flex">
-        </div>
+   
 </body>
 </html>
