@@ -4,28 +4,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Statikus projekt</title>
+    <link rel="icon" href="Dia12-300x200-removebg-preview.png">
 </head>
 <body>
+<!--hullám-->
 <style>
-    @import url(//fonts.googleapis.com/css?family=Lato:300:400);
-
 body {
   margin:0;
 }
-
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:48px;
-}
-p {
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
-  font-size:14px;
-  color: #333333;
-}
-
 .header {
   position:relative;
   text-align:center;
@@ -112,37 +98,531 @@ p {
 }
 #content {
     width: 100%;
-    height: 200vh;
+    height: 100%;
     background-color: rgb(20, 46, 233);
 }
 #y {
     background-color: rgba(252, 157, 3,1);
 }
 </style>
-<div class="header">
+<!--halak-->
+<style>
+.aha {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: block;
+}
+#inform {
+  width: 130px;
+  height: 110%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 23, 173, 0.8);
+  background-color: rgb(0, 23, 173);
+  position: relative;
 
-        <div class="inner-header flex">
-        </div>
-        
-        <div id="y">
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(20, 46, 233, 0.6)" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(20, 46, 233, 0.7)" />
+  
+}
+
+.aha:hover {
+  -webkit-filter: blur(4px); 
+  filter: blur(4px); 
+  
+} 
+.aha>img {
+  max-width: 250px;
+  max-height: 250px;
+}    
+
+</style>
+<style>
+  body{
+background-color: #2980b9;
+}
+.container-sun{
+text-align:center;
+}
+
+.svg-sun{
+width:300px;
+height:300px;
+
+-webkit-transform-origin: center center;
+-moz-transform-origin: 50% 50%;
+-o-transform-origin: center center;
+-ms-transform-origin: center center;
+transform-origin:50% 50%;
+
+-webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-o-animation:spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
+animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
+
+}
+
+#sun{
+stroke-width:18;
+stroke-dasharray:2;
+stroke-dashoffset:2;
+}
+
+@-webkit-keyframes sun-glow { 
+0% { fill: #f1c40f; stroke:#f1c40f;}
+50% { fill: #e67e22; stroke:#e67e22;}
+100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-moz-keyframes sun-glow { 
+0% { fill: #f1c40f; stroke:#f1c40f;}
+50% { fill: #e67e22; stroke:#e67e22;}
+100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-o-keyframes sun-glow { 
+0% { fill: #f1c40f; stroke:#f1c40f;}
+50% { fill: #e67e22; stroke:#e67e22;}
+100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-ms-keyframes sun-glow { 
+0% { fill: #f1c40f; stroke:#f1c40f;}
+50% { fill: #e67e22; stroke:#e67e22;}
+100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@keyframes sun-glow { 
+0% { fill: #f1c40f; stroke:#f1c40f;}
+50% { fill: #e67e22; stroke:#e67e22;}
+100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+
+
+@-webkit-keyframes spin{
+100% {
+-webkit-transform: rotate(360deg);
+}
+}
+@-moz-keyframes spin{
+100% {
+-moz-transform: rotate(360deg);
+}
+}
+@-o-keyframes spin{
+100% {
+-o-transform: rotate(360deg);
+}
+}
+@-ms-keyframes spin{
+100% {
+-ms-transform: rotate(360deg);
+}
+}
+@keyframes spin{
+100% {
+transform: rotate(360deg);
+}
+} 
+</style>
+<!--buborék-->
+<style>
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section span {
+    position: absolute;
+    bottom: -50px;
+    background: transparent;
+    border-radius: 50%;
+
+    pointer-events: none;
+    box-shadow: inset 0 0 10px rgba(225, 225, 225, 0.5);
+    animation: animate 4s linear infinite;
+}
+sectionspan ::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.25) translate(-70%, -70%);
+    background: radial-gradient(#ffffff, transparent);
+    border-radius: 50%;
+}
+@keyframes animation {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1200%);
+        opacity: 1;
+    }
+}
+
+</style>
+<script>
+  function createBubble() {
+    const section = document.querySelector("Section");
+    const createElement = document.createElement("span");
+    var size = Math.random() * 60;
+
+    createElement.style.animation = 
+      "animation 6s linear infinite";
+    createElement.style.width = 180 + size + "px";
+    createElement.style.height = 180 + size + "px";
+    createElement.style.left = 
+      Math.random() * innerWidth + "px";
+    section.appendChild(createElement);
+
+    setTimeout(() => {
+        createElement.remove();
+    }, 4000);
+}
+setInterval(createBubble, 100);
+  function hal1(){
+    if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal1').innerHTML = '<div id="inform">Ajakos gurámi <br><br>Latin neve: Trichogaster labiosa <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal2(){
+      if(document.getElementById('inform')){
+        document.getElementById('inform').remove();}
+        document.getElementById('hal2').innerHTML = '<div id="inform">Aranyfoltos pontylazac<br><br> Latin neve: Hemigrammus pulcher <br><br>édes vizi</div>';
+      }
+      function hal3(){
+        if(document.getElementById('inform')){
+          document.getElementById('inform').remove();}
+          document.getElementById('hal3').innerHTML = '<div id="inform">Aranyhal<br><br>Latin neve: Carassius auratus <br><br>édes vizi</div>';
+        }
+        function hal4(){
+          if(document.getElementById('inform')){
+            document.getElementById('inform').remove();}
+            document.getElementById('hal4').innerHTML = '<div id="inform">Bíborfejű díszmárna<br><br>Latin neve: Pethia nigrofasciata <br><br>édesvízi</div>';
+          }
+          function hal5(){
+            if(document.getElementById('inform')){
+              document.getElementById('inform').remove();}
+              document.getElementById('hal5').innerHTML = '<div id="inform">Celebeszi vitorláshal<br><br>Latin neve: Marosatherina ladigesi <br><br>édesvizi</div>';
+            }
+    function hal6(){
+      if(document.getElementById('inform')){
+        document.getElementById('inform').remove();}
+        document.getElementById('hal6').innerHTML = '<div id="inform">Citromlazac<br><br>Latin neve: Hyphessobrycon pulchripinnis <br><br>édesvizi</div>';
+      }
+      function hal7(){
+        if(document.getElementById('inform')){
+          document.getElementById('inform').remove();}
+          document.getElementById('hal7').innerHTML = '<div id="inform">Csíkos baltahasúlazac<br><br>Latin neve: Carnegiella strigata <br><br>édes vizi</div>';
+        }
+        function hal8(){
+          if(document.getElementById('inform')){
+            document.getElementById('inform').remove();}
+            document.getElementById('hal8').innerHTML = '<div id="inform">Díszes törpeszájú<br><br>Latin neve: Nannostomus beckfordi <br><br>tomus beckfordi</div>';
+          }
+          function hal9(){
+            if(document.getElementById('inform')){
+              document.getElementById('inform').remove();}
+              document.getElementById('hal9').innerHTML = '<div id="inform">Ékfoltos razbóra<br><br>Latin neve: Trigonostigma heteromorpha <br><br>édes vizi</div>';
+            }
+            function hal10(){
+              if(document.getElementById('inform')){
+                document.getElementById('inform').remove();}
+                document.getElementById('hal10').innerHTML = '<div id="inform">Fecskendező pontylazac<br><br>Latin neve: Copella arnoldi <br><br>édes vizi</div>';
+              }
+              function hal11(){
+                if(document.getElementById('inform')){
+                  document.getElementById('inform').remove();}
+                  document.getElementById('hal11').innerHTML = '<div id="inform">Fekete fantomlazac<br><br>Latin neve: Hyphessobrycon megalopterus <br><br>édes vizi</div>';
+                }
+                function hal12(){
+                  if(document.getElementById('inform')){
+                    document.getElementById('inform').remove();}
+                    document.getElementById('hal12').innerHTML = '<div id="inform">Fekete neonhal<br><br>Latin neve: Hyphessobrycon herbertaxelrodi <br><br>édes vizi</div>';
+                  }
+                  function hal13(){
+                    if(document.getElementById('inform')){
+                      document.getElementById('inform').remove();}
+                      document.getElementById('hal13').innerHTML = '<div id="inform">Zebradánió<br><br>Latin neve: Danio rerio <br><br>-</div>';
+                    }
+                    function hal14(){
+                      if(document.getElementById('inform')){
+                        document.getElementById('inform').remove();}
+                        document.getElementById('hal14').innerHTML = '<div id="inform">Vörössávos pontylazac<br><br>Latin neve: Hemigrammus erythrozonus <br><br>-</div>';
+                      }
+                      function hal15(){
+                        if(document.getElementById('inform')){
+                          document.getElementById('inform').remove();}
+                          document.getElementById('hal15').innerHTML = '<div id="inform">Vörösorrú pontylazac<br><br>Latin neve: Hemigrammus bleheri <br><br>-</div>';
+                        }
+                        function hal16(){
+      if(document.getElementById('inform')){
+        document.getElementById('inform').remove();}
+        document.getElementById('hal16').innerHTML = '<div id="inform">Vörösfoltos pontylazac<br><br>Latin neve: Hyphessobrycon erythrostigma <br><br>23-28 °C-os vizet igényel</div>';
+      }
+      function hal17(){
+        if(document.getElementById('inform')){
+          document.getElementById('inform').remove();}
+          document.getElementById('hal17').innerHTML = '<div id="inform">Vörös neonhal<br><br>Latin neve: Paracheirodon axelrodi <br><br>21-28 °C-os vizet igényel</div>';
+        }
+        function hal18(){
+          if(document.getElementById('inform')){
+            document.getElementById('inform').remove();}
+            document.getElementById('hal18').innerHTML = '<div id="inform">Vörös fantomlazac<br><br>Latin neve: Hyphessobrycon sweglesi<br><br>22-23 °C-os vizet igényel</div>';
+          }
+          function hal19(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal19').innerHTML = '<div id="inform">Törpe üveglazac<br><br>Latin neve: Prionobrama filigera <br><br>22-28°C-os vizet igényel</div>';
+    }
+    function hal20(){
+      if(document.getElementById('inform')){
+        document.getElementById('inform').remove();}
+        document.getElementById('hal20').innerHTML = '<div id="inform">Törpe baltahasú lazac<br><br>Latin neve: Carnegiella marthae <br><br> 22-28 °C-os vizet igényel</div>';
+      }
+      function hal21(){
+        if(document.getElementById('inform')){
+          document.getElementById('inform').remove();}
+          document.getElementById('hal21').innerHTML = '<div id="inform">Tányérhasú algaevő<br><br>Latin neve: Pseudogastromyzon cheni <br><br>20-25 °C-os alatti vizet igényel</div>';
+        }
+        function hal22(){
+          if(document.getElementById('inform')){
+            document.getElementById('inform').remove();}
+            document.getElementById('hal22').innerHTML = '<div id="inform">Szumátrai díszmárna<br><br>Latin neve: Puntius tetrazona <br><br>20-26 °C-os vizet igényel</div>';
+          }
+          function hal23(){
+            if(document.getElementById('inform')){
+              document.getElementById('inform').remove();}
+              document.getElementById('hal23').innerHTML = '<div id="inform">Színjátszó dánió<br><br>Latin neve: Danio albolineatus <br><br>22-24 °C-os vizet igényel</div>';
+            }
+            function hal24(){
+              if(document.getElementById('inform')){
+                document.getElementById('inform').remove();}
+                document.getElementById('hal24').innerHTML = '<div id="inform">Sziámi harcoshal<br><br>Latin neve: Betta splendens <br><br>24-27 °C-os vizet igényel</div>';
+              }
+              function hal25(){
+                if(document.getElementById('inform')){
+                  document.getElementById('inform').remove();}
+                  document.getElementById('hal25').innerHTML = '<div id="inform">Lángvörös pontylazac<br><br>Latin neve: Hyphessobrycon flammeus <br><br>félsós vizeinek lakója</div>';
+                }
+                function hal26(){
+                  if(document.getElementById('inform')){
+                    document.getElementById('inform').remove();}
+                    document.getElementById('hal26').innerHTML = '<div id="inform">Leopárd dánió<br><br>Latin neve: Brachydanio frankei <br><br>félsós vizeinek lakója</div>';
+                  }
+                  function hal27(){
+                    if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal27').innerHTML = '<div id="inform">Lovacskalazac<br><br>Latin neve:  Nannostomus eques <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal28(){
+      if(document.getElementById('inform')){
+        document.getElementById('inform').remove();}
+        document.getElementById('hal28').innerHTML = '<div id="inform">Madagaszkári kalászhal<br><br>Latin neve: Bedotia madagascariensis <br><br>félsós vizeinek lakója</div>';
+      }
+      function hal29(){
+        if(document.getElementById('inform')){
+          document.getElementById('inform').remove();}
+          document.getElementById('hal29').innerHTML = '<div id="inform">Malabári dánió<br><br>Latin neve: Devario malabaricus <br><br>félsós vizeinek lakója</div>';
+        }
+        function hal30(){
+          if(document.getElementById('inform')){
+            document.getElementById('inform').remove();}
+            document.getElementById('hal30').innerHTML = '<div id="inform">Moszatevő márna<br><br>Latin neve: Gyrinocheilus aymonieri <br><br>félsós vizeinek lakója</div>';
+          }
+          function hal31(){
+            if(document.getElementById('inform')){
+              document.getElementById('inform').remove();}
+              document.getElementById('hal31').innerHTML = '<div id="inform">Myers-baltahasúlazac<br><br>Latin neve: Carnegiella myersi <br><br>félsós vizeinek lakója</div>';
+            }
+            function hal32(){
+              if(document.getElementById('inform')){
+                document.getElementById('inform').remove();}
+                document.getElementById('hal32').innerHTML = '<div id="inform">Neonhal<br><br>Latin neve: Paracheirodon innesi <br><br>félsós vizeinek lakója</div>';
+              }
+              function hal33(){
+                if(document.getElementById('inform')){
+                  document.getElementById('inform').remove();}
+                  document.getElementById('hal33').innerHTML = '<div id="inform">Öves díszcsík<br><br>Latin neve: Chromobotia macracanthus <br><br>félsós vizeinek lakója</div>';
+                }
+                function hal34(){
+                  if(document.getElementById('inform')){
+                    document.getElementById('inform').remove();}
+                    document.getElementById('hal34').innerHTML = '<div id="inform">Parázsszemű pontylazac<br><br>Latin neve: Hemigrammus ocellifer <br><br>félsós vizeinek lakója</div>';
+                  }
+                  function hal35(){
+                    if(document.getElementById('inform')){
+                      document.getElementById('inform').remove();}
+                      document.getElementById('hal35').innerHTML = '<div id="inform">Párduccsík<br><br>Latin neve: Pangio kuhlii <br><br>félsós vizeinek lakója</div>';
+                    }
+                    function hal36(){
+                      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal36').innerHTML = '<div id="inform">Pettyesúszójú dánió<br><br>Latin neve: Danio nigrofasciatus <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal37(){
+      if(document.getElementById('inform')){
+        document.getElementById('inform').remove();}
+        document.getElementById('hal37').innerHTML = '<div id="inform">Rézlazac<br><br>Latin neve: Hasemania nana <br><br>félsós vizeinek lakója</div>';
+      }
+      function hal38(){
+        if(document.getElementById('inform')){
+          document.getElementById('inform').remove();}
+          document.getElementById('hal38').innerHTML = '<div id="inform">Rézszinű pontylazac<br><br>Latin neve: Hemigrammus rodwayi <br><br>félsós vizeinek lakója</div>';
+        }
+        function hal39(){
+          if(document.getElementById('inform')){
+            document.getElementById('inform').remove();}
+            document.getElementById('hal39').innerHTML = '<div id="inform">Rózsás díszmárna<br><br>Latin neve: Puntius conchonius <br><br>félsós vizeinek lakója</div>';
+          }
+          function hal40(){
+            if(document.getElementById('inform')){
+              document.getElementById('inform').remove();}
+              document.getElementById('hal40').innerHTML = '<div id="inform">Serplazac<br><br>Latin neve: Hyphessobrycon eques <br><br>félsós vizeinek lakója</div>';
+            }
+            function hal41(){
+              if(document.getElementById('inform')){
+                document.getElementById('inform').remove();}
+                document.getElementById('hal41').innerHTML = '<div id="inform">Stendhal-hal<br><br>Latin neve:  Epalzeorhynchos bicolor <br><br>félsós vizeinek lakója</div>';
+              }
+              function hal42(){
+                if(document.getElementById('inform')){
+                  document.getElementById('inform').remove();}
+                  document.getElementById('hal42').innerHTML = '<div id="inform">Sziámi harcoshal<br><br>Latin neve:  Betta splendens <br><br>félsós vizeinek lakója</div>';
+                }
+                function hal43(){
+                  if(document.getElementById('inform')){
+                    document.getElementById('inform').remove();}
+                    document.getElementById('hal43').innerHTML = '<div id="inform">Színjátszó dánió<br><br>Latin neve: Danio albolineatus <br><br>félsós vizeinek lakója</div>';
+                  }
+                  function hal44(){
+                    if(document.getElementById('inform')){
+                      document.getElementById('inform').remove();}
+                      document.getElementById('hal44').innerHTML = '<div id="inform">Szumátrai díszmárna<br><br>Latin neve: Puntius tetrazona <br><br>félsós vizeinek lakója</div>';
+                    }
+                    function hal45(){
+                      if(document.getElementById('inform')){
+                        document.getElementById('inform').remove();}
+                        document.getElementById('hal45').innerHTML = '<div id="inform">Tányérhasú algaevő<br><br>Latin neve: Pseudogastromyzon cheni <br><br>félsós vizeinek lakója</div>';
+                      }
+    function hal46(){
+      if(document.getElementById('inform')){
+        document.getElementById('inform').remove();}
+        document.getElementById('hal46').innerHTML = '<div id="inform">Törpe baltahasúlazac<br><br>Latin neve: Carnegiella marthae <br><br>félsós vizeinek lakója</div>';
+      }
+      function hal47(){
+        if(document.getElementById('inform')){
+          document.getElementById('inform').remove();}
+          document.getElementById('hal47').innerHTML = '<div id="inform">Törpe üveglazac<br><br>Latin neve: Prionobrama filigera <br><br>félsós vizeinek lakója</div>';
+        }
+        function hal48(){
+          if(document.getElementById('inform')){
+            document.getElementById('inform').remove();}
+            document.getElementById('hal48').innerHTML = '<div id="inform">Vörös fantomlazac<br><br>Latin neve: Hyphessobrycon sweglesi <br><br>félsós vizeinek lakója</div>';
+          }
+          function hal49(){
+            if(document.getElementById('inform')){
+              document.getElementById('inform').remove();}
+              document.getElementById('hal49').innerHTML = '<div id="inform">Vörös neonhal<br><br>Latin neve:  Paracheirodon axelrodi <br><br>félsós vizeinek lakója</div>';
+            }
+            function hal50(){
+              if(document.getElementById('inform')){
+                document.getElementById('inform').remove();}
+                document.getElementById('hal50').innerHTML = '<div id="inform">Vörösorrú pontylazac<br><br>Latin neve: Hemigrammus bleheri <br><br>félsós vizeinek lakója</div>';
+              }
+              function hal51(){
+                if(document.getElementById('inform')){
+                  document.getElementById('inform').remove();}
+                  document.getElementById('hal51').innerHTML = '<div id="inform">Vörössávos pontylazac<br><br>Latin neve: Hemigrammus erythrozonus <br><br>félsós vizeinek lakója</div>';
+                }
+                function hal52(){
+                  if(document.getElementById('inform')){
+                    document.getElementById('inform').remove();}
+                    document.getElementById('hal52').innerHTML = '<div id="inform">Zebra dánió<br><br>Latin neve: Danio rerio <br><br>félsós vizeinek lakója</div>';
+                  }
+                  </script>
+<div class="header">
+  <div class="inner-header flex">
+    <svg class="svg-sun" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
+    <circle cx="50" cy="50" r="35" id="sun"></circle>
+    </svg>
+  </div>
+  <div id="y">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(20, 46, 233, 0.6)" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(20, 46, 233, 0.7)" />
         <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(20, 46, 233, 0.8)" />
         <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(20, 46, 233, 0.9)" />
-        </g>
+      </g>
         </svg>
+      </div>
+      <div id="content">
+        <div class="bottomMenu"><br>
+            <div class="aha" onmouseover="hal1()"><img src="halak/ajakos gurámi.jpg"></div><div id="hal1" align="center"></div><br>
+            <div class="aha" onmouseover="hal2()"><img src="halak/aranyfoltos pontylazac.jpg"></div><div id="hal2" align="center"></div><br>
+            <div class="aha" onmouseover="hal3()"><img src="halak/aranyhal, fátyolos aranyhal, gombafejű aranyhal.jpg"></div><div align="center" id="hal3"></div><br>
+            <div class="aha" onmouseover="hal4()"><img src="halak/bíborfejű díszmárna.jpg"></div><div id="hal4" align="center"></div><br>
+            <div class="aha" onmouseover="hal5()"><img src="halak/Boeseman kalászhala.jpg"></div><div id="hal5" align="center"></div><br>
+            <div class="aha" onmouseover="hal6()"><img src="halak/cápamárna.jpg"></div><div id="hal6" align="center"></div><br>
+            <div class="aha" onmouseover="hal7()"><img src="halak/celebeszi vitorláshal.jpg"></div><div id="hal7" align="center"></div><br>
+            <div class="aha" onmouseover="hal8()"><img src="halak/citromlazac.jpg"></div><div id="hal8" align="center"></div><br>
+            <div class="aha" onmouseover="hal9()"><img src="halak/csíkos baltahasúlazac.jpg"></div><div id="hal9" align="center"></div><br>
+            <div class="aha" onmouseover="hal10()"><img src="halak/díszes törpeszájú hal.jpg"></div><div id="hal10" align="center"></div><br>
+            <div class="aha" onmouseover="hal11()"><img src="halak/ékfoltos razbóra.jpg"></div><div id="hal11" align="center"></div><br>
+    <div class="aha" onmouseover="hal12()"><img src="halak/fecskendező pontylazac.jpg"></div><div id="hal12" align="center"></div><br>
+    <div class="aha" onmouseover="hal13()"><img src="halak/fekete fantomlazac.jpg"></div><div id="hal13" align="center"></div><br>
+    <div class="aha" onmouseover="hal14()"><img src="halak/fekete neonhal.jpg"></div><div id="hal14" align="center"></div><br>
+    <div class="aha" onmouseover="hal15()"><img src="halak/fekete tetra.jpg"></div><div id="hal15" align="center"></div><br>
+    <div class="aha" onmouseover="hal16()"><img src="halak/ferdénúszó pontylazac.jpg"></div><div id="hal16" align="center"></div><br>
+    <div class="aha" onmouseover="hal17()"><img src="halak/gyémántlazac.jpg"></div><div id="hal17" align="center"></div><br>
+    <div class="aha" onmouseover="hal18()"><img src="halak/gyöngy dánió.jpg"></div><div id="hal18" align="center"></div><br>
+    <div class="aha" onmouseover="hal19()"><img src="halak/háromsávos razbóra.jpg"></div><div id="hal19" align="center"></div><br>
+    <div class="aha" onmouseover="hal20()"><img src="halak/karcsú díszmárna.jpg"></div><div id="hal20" align="center"></div><br>
+    <div class="aha" onmouseover="hal21()"><img src="halak/kék dánió.jpg"></div><div id="hal21" align="center"></div><br>
+    <div class="aha" onmouseover="hal22()"><img src="halak/kínai paradicsomhal.jpg"></div><div id="hal22" align="center"></div><br>
+    <div class="aha" onmouseover="hal23()"><img src="halak/kongólazac.jpg"></div><div id="hal23" align="center"></div><br>
+    <div class="aha" onmouseover="hal24()"><img src="halak/lángvörös pontylazac.jpg"></div><div id="hal24" align="center"></div><br>
+    <div class="aha" onmouseover="hal25()"><img src="halak/leopárd dánió.jpg"></div><div id="hal25" align="center"></div><br>
+    <div class="aha" onmouseover="hal26()"><img src="halak/lovacskalazac.jpg"></div><div id="hal26" align="center"></div><br>
+    <div class="aha" onmouseover="hal27()"><img src="halak/madagaszkári kalászhal.jpg"></div><div id="hal27" align="center"></div><br>
+    <div class="aha" onmouseover="hal28()"><img src="halak/malabári dánió.jpg"></div><div id="hal28" align="center"></div><br>
+    <div class="aha" onmouseover="hal29()"><img src="halak/moszatevő márna.jpg"></div><div id="hal29" align="center"></div><br>
+    <div class="aha" onmouseover="hal30()"><img src="halak/Myers-baltahasúlazac.jpg"></div><div id="hal30" align="center"></div><br>
+    <div class="aha" onmouseover="hal31()"><img src="halak/neonhal.jpg"></div><div id="hal31" align="center"></div><br>
+    <div class="aha" onmouseover="hal32()"><img src="halak/öves díszcsík.jpg"></div><div id="hal32" align="center"></div><br>
+    <div class="aha" onmouseover="hal33()"><img src="halak/parázsszemű pontylazac.jpg"></div><div id="hal33" align="center"></div><br>
+    <div class="aha" onmouseover="hal34()"><img src="halak/párduccsík.jpg"></div><div id="hal34" align="center"></div><br>
+    <div class="aha" onmouseover="hal35()"><img src="halak/pettyesúszójú dánió.jpg"></div><div id="hal35" align="center"></div><br>
+    <div class="aha" onmouseover="hal36()"><img src="halak/rézlazac.jpg"></div><div id="hal36" align="center"></div><br>
+    <div class="aha" onmouseover="hal37()"><img src="halak/rézszínű pontylazac.jpg"></div><div id="hal37" align="center"></div><br>
+    <div class="aha" onmouseover="hal38()"><img src="halak/rózsás díszmárna.jpg"></div><div id="hal38" align="center"></div><br>
+    <div class="aha" onmouseover="hal39()"><img src="halak/serpalazac.jpg"></div><div id="hal39" align="center"></div><br>
+    <div class="aha" onmouseover="hal40()"><img src="halak/Stendhal-hal.jpg"></div><div id="hal40" align="center"></div><br>
+    <div class="aha" onmouseover="hal41()"><img src="halak/sziámi harcoshal.jpg"></div><div id="hal41" align="center"></div><br>
+    <div class="aha" onmouseover="hal42()"><img src="halak/színjátszó dánió.jpg"></div><div id="hal42" align="center"></div><br>
+    <div class="aha" onmouseover="hal43()"><img src="halak/szumátrai díszmárna.jpg"></div><div id="hal43" align="center"></div><br>
+    <div class="aha" onmouseover="hal44()"><img src="halak/tányérhasú algaevő.jpg"></div><div id="hal44" align="center"></div><br>
+    <div class="aha" onmouseover="hal45()"><img src="halak/törpe baltahasúlazac.jpg"></div><div id="hal45" align="center"></div><br>
+    <div class="aha" onmouseover="hal46()"><img src="halak/törpe üveglazac.jpg"></div><div id="hal46" align="center"></div><br>
+    <div class="aha" onmouseover="hal47()"><img src="halak/vörös fantomlazac.jpg"></div><div id="hal47" align="center"></div><br>
+    <div class="aha" onmouseover="hal48()"><img src="halak/vörös neonhal.jpg"></div><div id="hal48" align="center"></div><br>
+    <div class="aha" onmouseover="hal49()"><img src="halak/vörösfoltos pontylazac.jpg"></div><div id="hal49" align="center"></div><br>
+    <div class="aha" onmouseover="hal50()"><img src="halak/vörösorrú pontylazac.jpg"></div><div id="hal50" align="center"></div><br>
+    <div class="aha" onmouseover="hal51()"><img src="halak/vörössávos pontylazac.jpg"></div><div id="hal51" align="center"></div><br>
+    <div class="aha" onmouseover="hal52()"><img src="halak/zebradánió.jpg"></div><div id="hal52" align="center"></div><br>
+</div>
+<div id="background-wrap">
+            </div>
+          </div>
         </div>
-        <div id="content">
-            <div class="bottomMenu">PICIKUKI</div>
-        </div>
-        </div>
-        
-   
+        </div> 
 </body>
 </html>
