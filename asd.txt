@@ -1,0 +1,140 @@
+function hal25(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal25').innerHTML = '<div id="inform">Lángvörös pontylazac<br><br>Latin neve: Hyphessobrycon flammeus <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal26(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal26').innerHTML = '<div id="inform">Leopárd dánió<br><br>Latin neve: Brachydanio frankei <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal27(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal27').innerHTML = '<div id="inform">Lovacskalazac<br><br>Latin neve:  Nannostomus eques <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal28(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal28').innerHTML = '<div id="inform">Madagaszkári kalászhal<br><br>Latin neve: Bedotia madagascariensis <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal29(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal29').innerHTML = '<div id="inform">Malabári dánió<br><br>Latin neve: Devario malabaricus <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal30(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal30').innerHTML = '<div id="inform">Moszatevő márna<br><br>Latin neve: Gyrinocheilus aymonieri <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal31(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal31').innerHTML = '<div id="inform">Myers-baltahasúlazac<br><br>Latin neve: Carnegiella myersi <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal32(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal32').innerHTML = '<div id="inform">Neonhal<br><br>Latin neve: Paracheirodon innesi <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal33(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal33').innerHTML = '<div id="inform">Öves díszcsík<br><br>Latin neve: Chromobotia macracanthus <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal34(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal34').innerHTML = '<div id="inform">Parázsszemű pontylazac<br><br>Latin neve: Hemigrammus ocellifer <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal35(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal35').innerHTML = '<div id="inform">Párduccsík<br><br>Latin neve: Pangio kuhlii <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal36(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal36').innerHTML = '<div id="inform">Pettyesúszójú dánió<br><br>Latin neve: Danio nigrofasciatus <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal37(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal37').innerHTML = '<div id="inform">Rézlazac<br><br>Latin neve: Hasemania nana <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal38(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal38').innerHTML = '<div id="inform">Rézszinű pontylazac<br><br>Latin neve: Hemigrammus rodwayi <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal39(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal39').innerHTML = '<div id="inform">Rózsás díszmárna<br><br>Latin neve: Puntius conchonius <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal40(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal40').innerHTML = '<div id="inform">Serplazac<br><br>Latin neve: Hyphessobrycon eques <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal41(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal41').innerHTML = '<div id="inform">Stendhal-hal<br><br>Latin neve:  Epalzeorhynchos bicolor <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal42(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal42').innerHTML = '<div id="inform">Sziámi harcoshal<br><br>Latin neve:  Betta splendens <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal43(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal43').innerHTML = '<div id="inform">Színjátszó dánió<br><br>Latin neve: Danio albolineatus <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal44(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal44').innerHTML = '<div id="inform">Szumátrai díszmárna<br><br>Latin neve: Puntius tetrazona <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal45(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal45').innerHTML = '<div id="inform">Tányérhasú algaevő<br><br>Latin neve: Pseudogastromyzon cheni <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal46(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal46').innerHTML = '<div id="inform">Törpe baltahasúlazac<br><br>Latin neve: Carnegiella marthae <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal47(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal47').innerHTML = '<div id="inform">Törpe üveglazac<br><br>Latin neve: Prionobrama filigera <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal48(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal48').innerHTML = '<div id="inform">Vörös fantomlazac<br><br>Latin neve: Hyphessobrycon sweglesi <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal49(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal49').innerHTML = '<div id="inform">Vörös neonhal<br><br>Latin neve:  Paracheirodon axelrodi <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal50(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal50').innerHTML = '<div id="inform">Vörösorrú pontylazac<br><br>Latin neve: Hemigrammus bleheri <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal51(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal51').innerHTML = '<div id="inform">Vörössávos pontylazac<br><br>Latin neve: Hemigrammus erythrozonus <br><br>félsós vizeinek lakója</div>';
+    }
+    function hal52(){
+      if(document.getElementById('inform')){
+      document.getElementById('inform').remove();}
+      document.getElementById('hal52').innerHTML = '<div id="inform">Zebra dánió<br><br>Latin neve: Danio rerio <br><br>félsós vizeinek lakója</div>';
+    }
